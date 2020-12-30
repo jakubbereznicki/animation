@@ -1,0 +1,64 @@
+:host {
+  position: relative;
+  display:block;
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+
+    .menu {
+      position: absolute;
+      top: 0;
+      left:-450px;
+      width: 500px;
+      height: 100vh;
+      padding: 40px;
+      background: linear-gradient(-90deg, #00c6fb 0%, #005bea 100%);
+      color: #ffffff;
+      transition: .3s ease-out;
+
+      &.active {
+        left: 0;
+      }
+
+      ul {
+        position: relative;
+        list-style: none;
+
+        .menu-title {
+          display: block;
+          text-transform: uppercase;
+
+          &.active {
+
+          }
+        }
+
+        li {
+          a {
+            font-size: 26px;
+            font-weight: 200;
+          }
+        }
+      }
+
+      .bars {
+        position: absolute;
+        top: 50px;
+        right: 0;
+
+        .bar {
+          width: 20px;
+          height: 5px;
+          border-radius: 5px;
+          background-color: #ffffff;
+          margin: 5px;
+        }
+      }
+    }
+  }
+}

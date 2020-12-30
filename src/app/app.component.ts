@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'animation-train';
+  isMenuOpen: boolean;
+
+  menuMouseOn() {
+    this.isMenuOpen = true;
+  }
+
+  menuMouseOff() {
+    this.isMenuOpen = false;
+  }
 }
