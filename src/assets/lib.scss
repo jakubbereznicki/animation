@@ -1,0 +1,61 @@
+.code-box {
+  position: relative;
+  width: 800px;
+  min-height: 300px;
+  padding: 30px;
+  font-size: 24px;
+  border-radius: 8px;
+  background-color: #fdfbfb;
+
+  &.html {
+    &::before {
+    position: absolute;
+    content: '';
+    top:0;
+    left:0;
+    width: 100%;
+    height: 5px;
+    border-radius: 8px 8px 0 0;
+    background-color: orange;
+    }
+
+    &::after {
+      position: absolute;
+      content: 'html';
+      top: 10px;
+      right: -28px;
+      padding: 5px;
+      transform: rotate(90deg);
+      font-size: 20px;
+      border-radius: 8px 0 0 0;
+      background-color: orange;
+      color: white;
+    }
+  }
+
+  &.css {
+    &::before {
+    position: absolute;
+    content: '';
+    top:0;
+    left:0;
+    width: 100%;
+    height: 5px;
+    border-radius: 8px 8px 0 0;
+    background-color: blue;
+    }
+
+    &::after {
+      position: absolute;
+      content: 'css';
+      top: 4px;
+      right: -28px;
+      padding: 5px;
+      transform: rotate(90deg);
+      font-size: 20px;
+      border-radius: 8px 0 0 0;
+      background-color: blue;
+      color: white;
+    }
+  }
+}
